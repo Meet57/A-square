@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@200;400;600&family=Playfair+Display&display=swap');
+
+/* 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif; 
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    cursor: none !important;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus{
+    cursor:none;
+}
+
+a:hover{
+    cursor:none;
+    color: inherit;
+}
+
+p {
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px !important;
+    }
+
+    .heroimg {
+        opacity: 0.15;
+    }
+}
+
+.hr {
+    border: 1px solid #C97F46;
+    opacity: 1;
+}
+
+.text-gold {
+    color: #C97F46;
+}
+
+.bebas {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.opensans700 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.herobutton {
+    color: #C97F46;
+    font-size: medium;
+    font-size: 12 !important;
+    background-color: black;
+    border: solid 1px;
+    border-color: #C97F46;
+    border-radius: 50px;
+    transition-duration: 200ms;
+}
+
+.herobutton:hover {
+    color: white;
+    font-size: medium;
+    font-size: 12 !important;
+    background-color: #C97F46;
+    border: solid 1px;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+}
+
+.goldbox {
+    border: 2px solid #C97F46;
+    box-sizing: border-box;
+    border-radius: 31px;
+}
+
+.footer {
+    background-color: #C97F4680;
+}
+
+.logobox{
+    transition-duration: 300ms;
+}
+
+.logobox:hover{
+    opacity: 0.3;
+}
+
+.form-input {
+    color: white;
+    border: 0;
+    border-bottom: 2px solid #C97F4650;
+    background-color: transparent;
+}
+
+.form-input:focus {
+    color: white;
+    border: 0;
+    border-bottom: 2px solid #C97F46;
+    background-color: transparent;
+    outline: none;
+}
+
+.submitbtn {
+    /* color: #C97F4650; */
+    color: #C97F46;
+    font-size: 12 !important;
+    border: 1px solid #C97F4650;
+    background-color: transparent !important;
+    border-radius: 0px;
+    transition-duration: 100ms;
+}
+
+.submitbtn:hover {
+    font-size: 15 !important;
+    background-color: transparent;
+    border: 2px solid #C97F46;
+    background-color: transparent !important;
+}
+
+.cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #c6c6c6;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .15s;
+}
+
+.cursor2 {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+}
+
+.content:hover~.cursor {
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: #c6c6c6;
+    opacity: .5;
+}
+
+.content:hover~.cursor2 {
+    opacity: 0;
+}
+
+.navigation{
+    position: fixed;
+    background-color: #C97F46;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 100%;
+}
+
+.swipein {
+    animation: swipeLeft 1s normal forwards;
+}
+
+.swipeout {
+    animation: swipeRight 1s normal forwards;
+}
+
+@keyframes swipeLeft {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes swipeRight {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
