@@ -18,6 +18,13 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     cursor: none !important;
+    overflow-x: hidden !important;
+}
+
+@media (max-width: 768px) {
+    .hideOverflowOnMobile {
+        overflow: hidden;
+    }
 }
 
 a {
@@ -25,12 +32,12 @@ a {
     color: inherit;
 }
 
-a:focus{
-    cursor:none;
+a:focus {
+    cursor: none;
 }
 
-a:hover{
-    cursor:none;
+a:hover {
+    cursor: none;
     color: inherit;
 }
 
@@ -44,7 +51,7 @@ p {
     }
 
     .heroimg {
-        opacity: 0.15;
+        opacity: 0.15 !important;
     }
 }
 
@@ -101,11 +108,11 @@ p {
     background-color: #C97F4680;
 }
 
-.logobox{
+.logobox {
     transition-duration: 300ms;
 }
 
-.logobox:hover{
+.logobox:hover {
     opacity: 0.3;
 }
 
@@ -152,6 +159,7 @@ p {
     pointer-events: none;
     transform: translate(-50%, -50%);
     transition: .15s;
+    z-index: 999;
 }
 
 .cursor2 {
@@ -165,6 +173,7 @@ p {
     pointer-events: none;
     transform: translate(-50%, -50%);
     transition: .1s;
+    z-index: 999;
 }
 
 .content:hover~.cursor {
@@ -177,13 +186,14 @@ p {
     opacity: 0;
 }
 
-.navigation{
+.navigation {
     position: fixed;
     background-color: #C97F46;
     height: 100%;
     width: 100%;
     top: 0;
     left: 100%;
+    z-index: 99;
 }
 
 .swipein {
