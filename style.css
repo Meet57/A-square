@@ -148,7 +148,7 @@ p {
     background-color: transparent !important;
 }
 
-.cursor {
+/* .cursor {
     position: fixed;
     width: 30px;
     height: 30px;
@@ -184,7 +184,7 @@ p {
 
 .content:hover~.cursor2 {
     opacity: 0;
-}
+} */
 
 .navigation {
     position: fixed;
